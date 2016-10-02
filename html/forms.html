@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form Elements</title>
+<!-- Framework JS -->
+<!-- jQuery -->
+<script src="../scripts/jquery-1.11.2.min.js"></script><!-- Select Boxes Script -->
+<script src="../scripts/chosen.jquery.min.js"></script>
+<!-- Carousel Script -->
+<script src="../scripts/jquery.carouFredSel.js" type="text/javascript"></script>
+
+<script src="../scripts/jquery.ba-throttle-debounce.min.js" type="text/javascript"></script>
+<script src="../scripts/jquery.mousewheel.min.js" type="text/javascript"></script>
+<script src="../scripts/jquery.touchSwipe.min.js" type="text/javascript"></script>
+<script src="../scripts/jquery.transit.min.js" type="text/javascript"></script>
+
+<!-- Framework Scripts -->
+<script src="../scripts/scripts.js"></script>
+<!-- Framework JS Ends -->
+<!-- Framework CSS -->
+<link rel="stylesheet" href="../css/typography.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/chosen.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" media="all" />
+<!-- Framework CSS Ends -->
+
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+</head>
+
+<body>  
+<div class="content-item">
+    <nav class="menu">
+        <ul class="active clearfix">
+        <li class="current-item"><a href="content-display.html">Home</a></li>
+        <li><a href="tabs.html">Tabs</a></li>
+        <li><a href="accordion.html">Accordion</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="menus.html">Menus</a></li>
+        <li><a href="carousel.html">Carousel</a></li>
+        <li><a href="image-uploader-positioner.html">Image uploader</a></li>
+        <li><a href="promo-image-uploader-positioner.html">Promo Roundels</a></li>
+    </ul>
+ 
+ 
+    <a class="toggle-nav" href="#">&#9776;</a>
+</nav>
+<div class="seperator"></div>
+
+<h3>Form Elements</h3>
+  <div class="formContainer">
+    <form action="#" method="post" class="form" id="form1">
+      <div class="formElement">
+       
+        <div class="formItem">
+          <input id="checkbox" name="checkbox" class="checkbox checkbox-option" type="checkbox">
+          <label class="label label-checkbox" for="checkbox" form="">checkbox option</label>
+        </div>
+        
+        <div class="formItem">
+          <input id="checkbox1" name="checkbox" class="checkbox checkbox-option" type="checkbox">
+          <label class="label label-checkbox" for="checkbox1" form="">checkbox option</label>
+        </div>
+      </div>
+      <div class="formElement">
+        <div class="formItem">
+          <input id="radio" name="radio" class="radio radio-button-option" type="radio">
+          <label class="label label-radio-button" for="radio" form="">radio button label option</label>
+        </div>
+        <div class="formItem">
+          <input id="radio1" name="radio" class="radio  radio-button-option" type="radio">
+          <label class="label label-radio-button" for="radio1" form="">radio button label option</label>
+        </div>
+      </div>
+      <div class="formElement">
+        <div class="formLabel"><label class="label label-password" for="password" form="">password</label></div>
+        <div class="formItem">
+        <input id="password" name="password" class="password" type="password" placeholder="Please enter your password" required="required">
+        <label class="label label-checkbox button checkbox-password" for="checkbox-password">Show Password</label>
+        <input id="checkbox-password" name="checkbox-password" class="checkbox checkbox-option showPassword" type="checkbox"></div>
+      </div>
+      <div class="formElement">
+        <div class="formLabel"><label class="label label-select-box" for="select-box">select box</label></div>
+        <div class="formItem">
+          <select id="select-box" name="select-box" class="select-box chosen-select">
+            <option value="0" data-attribute="option-0" class="option" disabled selected>Please Select</option>
+            <option value="1" data-attribute="option-1" class="option">option 1</option>
+            <option value="2" data-attribute="option-2" class="option">option 2</option>
+            <option value="3" data-attribute="option-3" class="option">option 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="formElement">
+        <div class="formLabel"><label class="label label-file" for="file" form="">File Upload</label></div>
+        <div class="formItem">
+        <input id="uploadFile" class="uploadFile" placeholder="Choose File" disabled="disabled" />
+        <div class="fileUpload button">
+        <span>Upload</span>
+        <input id="file" name="file" class="upload" type="file">
+        </div>
+        </div>
+      </div>
+      <div class="formElement">
+        <div class="formLabel"><label class="label label-submit" for="submit" form="">submit</label></div>
+        <div class="formItem"><input id="submit" name="submit" class="submit button" type="submit"></div>
+      </div>
+      <div class="formElement">
+        <div class="formLabel"><label class="label label-text" for="text" form="">text</label></div>
+        <div class="formItem"><input id="text" name="text" class="text" type="text" placeholder="Please input text"></div>
+      </div>
+      <div class="formElement">
+        <div class="formLabel"><label class="label label-email" for="email" form="">email</label></div>
+        <div class="formItem"><input id="email" name="email" class="email" type="email" placeholder="Please enter your email" required="required"></div>
+      </div>
+      <div class="formElement">
+        <div class="formLabel"><label class="label label-url" for="url" form="">url</label></div>
+        <div class="formItem"><input id="url" name="url" class="url" type="url" placeholder="Please enter a valid URL"></div>
+      </div>
+      <div class="formElement">
+        <div class="formLabel">
+          <label class="label label-number" for="number" form="">number (incremental, step change = 2, initial = 6, max = 10)</label></div>
+        <div class="formItem"><input id="number" name="number" class="number" type="number"
+          min="0"
+          max="10"
+          step="2"
+          value="6">
+        </div>
+      </div>
+      <div class="formElement">
+        <div class="formLabel">
+          <label class="label label-range" for="range" form="">range (incremental slider, step change = 1, initial = 50, max = 100)</label></div>
+        <div class="formItem"><input id="range1" name="range" class="range" type="range" min="0" max="100">
+                   <span id="rangeValue1" class="rangeValue1">50</span>
+        </div>
+      </div>
+      <div class="formElement">
+        <div class="formLabel"><label class="label label-button" for="button" form="">button</label></div>
+        <div class="formItem"><input id="button" name="button" class="button" type="button" value="Click Me!"></div>
+      </div>
+    </form>
+  </div>
+ </div> 
+ <div class="content-item">
+<h3>Form Elements : Error States</h3>
+  <div class="formContainer">
+    <form action="#" method="post" class="form" id="form1">
+      <div class="formElement error">
+       
+        <div class="formItem">
+          <input id="checkbox2" name="checkbox" class="error checkbox checkbox-option" type="checkbox">
+          <label class="error label label-checkbox" for="checkbox2" form="">checkbox option</label>
+        </div>
+        <div class="formError"><div class="errorIcon">!</div> Error Please Correct</div>
+      </div>
+      <div class="formElement error">
+        <div class="formItem">
+          <input id="radio2" name="radio" class="error radio radio-button-option" type="radio">
+          <label class="error label label-radio-button" for="radio2" form="">radio button label option</label>
+        </div> 
+        <div class="formError error"><div class="errorIcon">!</div> Error Please Correct</div>
+      </div>
+      <div class="formElement error">
+        <div class="formLabel"><label class="error label label-password" for="password1" form="">password</label></div>
+        <div class="formItem">
+        <input id="password1" name="password1" class="error password" type="password" placeholder="Please enter your password" required="required">
+        <label class="error label label-checkbox button checkbox-password" for="checkbox-password1">Show Password</label>
+        <input id="checkbox-password1" name="checkbox-password" class="checkbox checkbox-option showPassword" type="checkbox"></div>
+        <div class="formError"><div class="errorIcon">!</div> Error Please Correct</div>
+      </div>
+       <div class="formElement error">
+        <div class="formLabel"><label class="error label label-select-box" for="select-box">select box</label></div>
+        <div class="formItem">
+          <select id="select-box" name="select-box" class="error select-box chosen-select">
+            <option value="0" data-attribute="option-0" class="option" disabled selected>Please Select</option>
+            <option value="1" data-attribute="option-1" class="option">option 1</option>
+            <option value="2" data-attribute="option-2" class="option">option 2</option>
+            <option value="3" data-attribute="option-1" class="option">option 3</option>
+          </select>
+        </div>
+        <div class="formError"><div class="errorIcon">!</div> Error Please Correct</div>
+      </div>
+      <div class="formElement error">
+        <div class="formLabel"><label class="error label label-text" for="text1" form="">text</label></div>
+        <div class="formItem"><input id="text1" name="text" class="error text" type="text" placeholder="Please input text"></div>
+        <div class="formError"><div class="errorIcon">!</div> Error Please Correct</div>
+      </div>
+      <div class="formElement error">
+        <div class="formLabel"><label class="error label label-email" for="email1" form="">email</label></div>
+        <div class="formItem"><input id="email1" name="email" class="error email" type="email" placeholder="Please enter your email" required="required">
+        </div>
+        <div class="formError"><div class="errorIcon">!</div> Error Please Correct</div>
+      </div>
+      <div class="formElement error">
+        <div class="formLabel"><label class="error label label-url" for="url1" form="">url</label></div>
+        <div class="formItem"><input id="url1" name="url" class="error url" type="url" placeholder="Please enter a valid URL"></div>
+        <div class="formError"><div class="errorIcon">!</div> Error Please Correct</div>
+      </div>
+      <div class="formElement error">
+        <div class="formLabel"><label class="error label label-submit" for="submit1" form="">submit</label></div>
+        <div class="formItem"><input id="submit1" name="submit" class="submit button" type="submit"></div>
+      </div>
+    </form>
+  </div>
+ </div> 
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* CSS Document */
+
+.content-item {
+    width: 100% !important;
+}
+
+.content-50 {
+	width:50%;
+	float:left;
+	min-width:250px;
+}
+
+.formContainer .accordion-section-title {
+	padding:0;
+	box-shadow:none;
+}
+
+.fileUpload.button {
+    height: 30px;
+    top: -9px;
+    left: -4px;
+}
+
+.fileUpload span {
+    top: 5px;
+    right: 8px;
+}
+
+
+.imageFile,
+.videoFile,
+.uploadedDataImage,
+.uploadedDataVideo {
+	display:none;
+}
+
+#SlideText label {
+    width: 100px;
+    display: block;
+}
+
+#preview {
+    position: relative;
+    overflow: hidden;
+}
+
+#preview p.holdingText {
+    margin: 165px auto 0;
+    width: 200px;
+}
+
+#slideTextContainer {
+    position: absolute;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    min-width: 33%;
+    max-width: 66%;
+    width: auto;
+}
+
+#bgShape ul {
+    list-style: none;
+}
+
+#bgShape ul li {
+    display: inline-block;
+	padding:0;
+}
+
+#bgShape ul li .formLabel {
+	padding:0;
+    font-size: 9px;
+}
+
+
+#bgShape ul li .button {
+	height: 30px;
+    width: 65px;
+    padding: 0;
+    min-width: 50px;
+}
+
+
+#data {
+    z-index: 99;
+    position: relative;
+}
+
+div#slideTextContainerBG {
+    position: absolute;
+    z-index: -1;
+	background:#fff;
+	opacity:0.77;
+	min-height:100%;
+	min-width:100%;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+
+#SlideText input {
+    width: 80%;
+}
+
+#slideTitleText,
+#slideSubTitleText,
+#slideLinkText {
+    margin: 0 0 0 20px;
+}
+
+ul.fontOptionsList,
+ul#imageTextPosition {
+    list-style: none;
+}
+
+ul#imageTextPositionTop li, 
+ul#imageTextPositionMiddle li, 
+ul#imageTextPositionBottom li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 80px;
+	padding:20px;
+}
+
+ul#imageTextPositionTop [type="radio"]:not(:checked) + label, 
+ul#imageTextPositionTop [type="radio"]:checked + label, 
+ul#imageTextPositionMiddle [type="radio"]:not(:checked) + label,
+ul#imageTextPositionMiddle [type="radio"]:checked + label, 
+ul#imageTextPositionBottom [type="radio"]:not(:checked) + label, 
+ul#imageTextPositionBottom [type="radio"]:checked + label {
+    font-size: 10px;	
+    padding: 20px 0 0;
+}
+
+ul#imageTextPositionTop [type="radio"]:not(:checked) + label:before, 
+ul#imageTextPositionTop [type="radio"]:checked + label:before,
+ul#imageTextPositionMiddle [type="radio"]:not(:checked) + label:before, 
+ul#imageTextPositionMiddle [type="radio"]:checked + label:before,
+ul#imageTextPositionBottom [type="radio"]:not(:checked) + label:before, 
+ul#imageTextPositionBottom [type="radio"]:checked + label:before {
+	width:9px;
+	height:9px;
+    left: 10px;
+    top: 5px;
+}
+
+ul#imageTextPositionTop [type="radio"]:not(:checked) + label:after, 
+ul#imageTextPositionTop [type="radio"]:checked + label:after,
+ul#imageTextPositionMiddle [type="radio"]:not(:checked) + label:after, 
+ul#imageTextPositionMiddle [type="radio"]:checked + label:after,
+ul#imageTextPositionBottom [type="radio"]:not(:checked) + label:after, 
+ul#imageTextPositionBottom [type="radio"]:checked + label:after {
+    left: 11px;
+    top: 1px;
+}
+
+ul.fontOptionsList li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 20px;
+}
+
+ul.fontOptionsList li .formLabel label.label {
+    width: 120px !important;
+    padding: 10px 0;
+    margin: 0 0 0 -10px;
+}
+
+.full-spectrum .sp-palette {
+max-width: 200px;
+}
+
+.content-image-holder {
+	width:650px;
+	height:auto;
+	min-height:375px;
+	background-color:#f2f2f2;
+	margin:20px auto;
+	padding:10px;
+    overflow: hidden;
+}
+
+
+.content-image-holder #preview img {
+	width:650px;
+	height:auto;
+	box-shadow:#333 0px 10px 10px 0px;
+}
+
+#bgOpacity {
+  	box-shadow: 1px 1px 2px #333;
+}
+
+#bgOpacity {
+	font-size: 20px;
+	padding: 0 0 0 10px;
+	width: auto;
+	min-width: 40px;
+	max-width: 60px;
+}
+
+.number {
+    max-width: 95px;
+}

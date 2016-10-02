@@ -1,0 +1,116 @@
+/* CSS Document */
+
+.content-item {
+    width: 100% !important;
+}
+
+.content-50 {
+	width:50%;
+	float:left;
+	min-width:250px;
+}
+
+.formContainer .accordion-section-title {
+	padding:0;
+	box-shadow:none;
+}
+
+.fileUpload.button {
+    height: 30px;
+    top: -9px;
+    left: -4px;
+}
+
+.fileUpload span {
+    top: 5px;
+    right: 8px;
+}
+
+.uploadPromo,
+.newPromoColor,
+.uploadedDataImage,
+.warning {
+	display:none;
+}
+
+.warning {
+	color:red;
+}
+
+#preview {
+    position: relative;
+    overflow: hidden;
+}
+
+.full-spectrum .sp-palette {
+max-width: 200px;
+}
+
+.content-image-holder {
+	width:650px;
+	height:auto;
+	min-height:375px;
+	background-color:#f2f2f2;
+	margin:20px auto;
+	padding:10px;
+    overflow: hidden;
+}
+
+.content-image-holder #preview img {
+	width:auto;
+	height:auto;
+	box-shadow:#333 0px 10px 10px 0px;
+}
+
+.productImage {
+	display:inline-block;
+	float:left;
+	padding:0 5px;
+}
+
+.productImage h1 {
+	text-align:center;
+}
+
+.lineLeft {
+	border-left:5px dotted #ccc;
+}
+
+.promoRoundelOutput {
+    width: 68px;
+    height: 68px;
+	-webkit-border-radius: 120px; 
+	-moz-border-radius: 120px;
+    border-radius: 120px;
+    background: #666;
+    position: relative;
+    bottom: 260px;
+    left: 10px;
+    border: 1px dotted #fff;
+}
+
+.lineLeft .promoRoundelOutput {
+    bottom: 505px;
+}
+
+.promoTextOutput {
+	font-size:20px;
+	color:#fff;
+	font-family:'Baskerville Medium';
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    width: 50px;
+    word-wrap: break-word;
+    overflow: hidden;
+    height: 40px;
+}
+
+.content-image-holder #preview .promoRoundelOutput img {
+    width: 68px;
+    height: 68px;
+	-webkit-border-radius: 120px; 
+	-moz-border-radius: 120px;
+    border-radius: 120px;
+	box-shadow:none;
+}
